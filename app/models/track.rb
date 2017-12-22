@@ -1,3 +1,3 @@
 class Track < ActiveRecord::Base
-  belongs_to :factor, optional: true
+  belongs_to :factor
 end

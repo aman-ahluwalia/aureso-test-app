@@ -26,8 +26,8 @@ ActiveRecord::Schema.define(version: 20171222185554) do
 
   create_table "factors", force: :cascade do |t|
     t.string   "property"
-    t.string   "type"
-    t.string   "resistance"
+    t.string   "kind"
+    t.integer  "resistance"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
