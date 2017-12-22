@@ -4,7 +4,8 @@ Rails.application.routes.draw do
     get '/ping/' => 'ping#ping'
     constraints ApiVersion.new(1) do
       scope :module => :v1 do
-        
+        resources :cars, only: [:show] do 
+        end
       end
     end
   end

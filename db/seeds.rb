@@ -5,3 +5,7 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+10.times do |_|
+  Car.create(slug: Faker::StarTrek.character , max_speed: Faker::Number.between(200, 300), speed_unit: "km/h")
+end
