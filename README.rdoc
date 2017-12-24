@@ -5,24 +5,16 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: 2.4.2
 
-* System dependencies
+* Rails version: 4.2.8
 
 * Configuration
 
-* Database creation
+* Database creation: rake db:create, rake db:migrate
 
-* Database initialization
+* Database initialization: rake db:seed
 
-* How to run the test suite
+* How to run the test suite: rspec
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* Example url: /api/v1/cars/subaru_impreza?track=nurburgring
