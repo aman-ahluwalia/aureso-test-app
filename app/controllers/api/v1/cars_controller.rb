@@ -29,7 +29,7 @@ module Api
       end
 
       def check_present_time
-        check_time = (Time.now - @track.timezone.to_f.hours).strftime("%I.%M")
+        check_time = (Time.now - @track.timezone.to_f.hours).strftime("%I.%M").to_f
         all_time_slots = Factor.where(property: 'time_of_the_day')
         for time_slot in all_time_slots do
           slot = time_slot[:kind].split(' - ')
